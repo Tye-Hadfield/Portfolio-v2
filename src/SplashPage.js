@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container,Row,Col } from 'reactstrap';
 import { FaArrowUp } from 'react-icons/fa';
-import hand from "./assets/Dark Brown Beans Kopi House Drinks Logo (2).svg"
+import hand from "./assets/Hand.svg"
 import {
     BrowserRouter as Router,
     Switch,
