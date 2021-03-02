@@ -1,11 +1,8 @@
 import React from 'react';
-import { Container,Row,Col } from 'reactstrap';
+import { Container,Row } from 'reactstrap';
 import { FaArrowUp } from 'react-icons/fa';
 import hand from "./assets/Hand.svg"
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
   } from "react-router-dom";
 

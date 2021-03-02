@@ -1,4 +1,4 @@
-import React, {  useEffect } from 'react';
+import React from 'react';
 import { Container,Row,Col,Card, Button, CardImg, CardTitle, CardDeck, CardSubtitle, CardBody, UncontrolledCarousel, UncontrolledPopover, PopoverHeader, PopoverBody} from 'reactstrap';
 import { motion } from "framer-motion"
 import travelman from "./assets/TravelGif.gif"

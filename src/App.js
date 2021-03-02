@@ -9,22 +9,8 @@ import {
   Link
 } from "react-router-dom";
 import Home from "./Home"
-import Test from "./Test"
 import SplashPage from "./SplashPage"
 
-
-
-// var i = 0;
-// var txt = 'Lorem ipsum dummy text blabla.';
-// var speed = 50;
-
-// function typeWriter() {
-//   if (i < txt.length) {
-//     document.getElementById("demo").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
 
 function App() {
   return (
@@ -37,9 +23,6 @@ function App() {
         </Route>
         <Route exact path="/home">
           <Home></Home>
-        </Route>
-        <Route exact path="/test">
-          <Test></Test>
         </Route>
     </Switch>
 
