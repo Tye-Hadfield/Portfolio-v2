@@ -11,6 +11,10 @@ h1 {
   z-index: 1000;
 }
 
+#icon {
+  color: #E0FBFC;
+}
+
 #icontwitter {
   color: #EE6C4D;
 }
@@ -626,7 +630,7 @@ h2 {
 }
 
 .carousel {
-  width: 60%;
+  width: 70%;
   margin: 0px !important;
   margin-bottom: 20px !important ;
 }
@@ -737,7 +741,7 @@ img[alt*="Slide "]{
 }
 
 .arrow {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 #icontwitter:hover
@@ -755,7 +759,10 @@ img[alt*="Slide "]{
 
 @media (max-width: 611px) {
   h4 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .carousel{
+    width: 85%;
   }
 }
 
