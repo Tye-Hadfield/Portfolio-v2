@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Grand+Hotel&family=Medula+One&display=swap');
 
 
@@ -86,7 +84,7 @@ h2 {
   perspective: 2px;
   
   /* Hide the overflow */
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 /* General styling, not necessarily related to parallax effect  */
@@ -126,8 +124,7 @@ h2 {
 
 #Tye-Hadfield{
   font-size: 7rem ;
-  font-family: 'Medula One', cursive;
-  text-shadow: 2px 2px rgb(0, 0, 0);
+  text-shadow: 2px 2px #3D5A80 ;
   text-align: center;
   
 }
@@ -263,28 +260,6 @@ h2 {
   width: 500px;
 }
 
-
-
-.spin-Wheels {
-  animation-name: spin ;
-  animation-duration: 3s; 
-  animation-direction: linear;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running; ;
-}
-
-
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
 
 
 @keyframes move {
@@ -632,8 +607,22 @@ h2 {
   box-shadow: -4vmin 0 0.7969393847777226vmin currentColor;
 }
 
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 .carousel {
-  margin: 20px;
+  width: 60%;
+  margin: 0px !important;
+  margin-bottom: 20px !important ;
 }
 
 .carousel-item > img { 
@@ -645,7 +634,15 @@ h2 {
 }
 
 img[alt*="Slide "]{
-  height: 70vh;
+  height: 55vh;
+}
+
+.card-img, .card-img-top, .card-img-bottom{
+  width: 68% !important;
+}
+
+.card-imgs-goals {
+  width: 50% !important;
 }
 
 
@@ -683,11 +680,18 @@ img[alt*="Slide "]{
 .flip-card-front {
   background-color:  #EE6C4D;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flip-card-back {
   background-color: #EE6C4D;
   transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-rm-background {
@@ -726,11 +730,34 @@ img[alt*="Slide "]{
   color: #E0FBFC !important;
 }
 
+.arrow {
+  margin-top: 5%;
+}
+
 @media (max-width: 611px) {
   h4 {
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 358px) {
+  h4 {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 602px) {
+  #Tye-Hadfield {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 358px) {
+  #Tye-Hadfield {
+    font-size: 4rem;
+  }
+}
+
 
 @media (max-width: 721px) {
   .imgblobs {
@@ -738,16 +765,23 @@ img[alt*="Slide "]{
   }
 }
 
-CSS
-@media not all and (min-resolution:.001dpcm) { 
-    @media {
-        .safari10 { 
-            color:#0000FF; 
-            background-color:#CCCCCC; 
-        }
-    }
+@media (max-width: 822px) {
+  .arrow {
+    margin-top: -48%;
+  }
 }
 
+@media (max-width: 375px) {
+  .arrow {
+    margin-top: -67%;
+  }
+}
+
+@media (max-height: 568px), (max-width: 358px) {
+  .arrow {
+    margin-top: -99%;
+  }
+}
 
 
 /* Safari (Remove Parallax) */

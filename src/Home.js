@@ -14,61 +14,62 @@ import TS from "./assets/TS.svg"
 import { AiFillTwitterSquare } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillFilePdf } from 'react-icons/ai'
+import { BsFillCaretDownFill } from "react-icons/bs";
 
 
 
 const items = [
     {
-      src: 'https://lh3.googleusercontent.com/pw/ACtC-3cMYUmGRgj6dxsg77CmfaeBJ7QHhakzNe0WmjpV-VRr56WkR3f5XvRN1FZ0Exd2MO2ozudFSgrAfzSHhfPrCKvOsNPiRWTesAd6WKUHxzQ1Iqw6ZW92IECIOFEQKSzUPntYBqVO-K_s4O8vEVwsTOCI=w1216-h912-no?authuser=0',
+      src: 'https://i.ibb.co/XJ6x5mP/IMG-1.jpg',
       altText: 'Slide 1',
       caption: 'Boston',
       header: 'New England Patriots!',
       key: '1',
     },
     {
-      src: 'https://lh3.googleusercontent.com/-P7-3RPh7vcXFmmd9DvRwAWOBksEHJ1XgSps4YJaSXEEObav1aeKZ-cUM23ijacZ52rQvTxdxFPcTYB2Lqz2IXxsP1pTxFnHXn7qWS3FlHf8rjVvKN7uNmqcPazUKnr-Y9sQBMoXaZXU0S520U9L0NBj1uyCJfL4u7ZZiuUWOplRADWWNIf_jE6FPuZesJvKQ0m5-PQNk4CJUqkym5sB53kc49KL-TYOshlt-MsXksqITIZRQtoFSZ4VnjarPG2BPfaNdiGditRSripUvi20FDSZj9J2dLsYfoybJmUNokIsBlGeblpO7CWrjhiJHTCHsQOF4EZwt2cJnF-12LAugGrUMQ1GmUo1xrnKIDo05EduT2iKYsleDNgh0Tt2RbJUCle6U_9vfEmit-gsCoV-VGVWlGfJEBwb1Wby4bQqmUv6iKdP3y0Z-Fhjtgkl7IzgX0DwRfIefIXFWXxYBFFrJnZCLZXFWslDMkzSoIMwJx3cv7TLqjazGaQ4fe9sm2BCw9ChjGWuPyUYbPvOapvLs8MpKCz9MsYFUifFF13uPn3XNPH7zYvtmw8zqzfmd6MIXhawFC7AfnEU1WyZ4WNOYdxETCdHw1EkxYdu5MSQHt_8Wq2hhPJTlQlOQeJYAghz8-sC1jaFx_XOtdjqmHKiKtQfKnALgiK7rkhHPdqQY5EoLu-mTSE8dbGNqAK8=w608-h912-no?authuser=0',
+      src: 'https://i.ibb.co/WD8RDGc/IMG-2.jpg',
       altText: 'Slide 2',
       caption: 'California',
       header: 'Disneyland!',
       key: '2',
     },
     {
-      src: 'https://lh3.googleusercontent.com/c0_5qF6nikiHAT-zoMbKiw92lcLP49PKCr4K223r0S9KZJgyCHTm9fc1K0fZJG5FGviN3sePNhXWapfLSLlhieoc1DAdLYFzWM7FkVr97rV_20psyqKatt24w3TgJOEgInr9lyVG_oJRNPeCYIdLFEviAKNpWfLddCMiIBi7TiOxGfjHrU8e3jnlN_mDc-4J_uy1nEFVju5o8nOg55JW34N9HG1axf6JGbHGvns14bdEP5gh4aNzkTwXuyXRcvOqmDh8WJn9g7fn1MHNH9eShiKcvMlGcLjujhM0wbQM86LfJpSwqJUY7wKsWDFaGkED5NVQa42M-GnVGLwAS0vi9ButKa29GFooRip3cTb0s1L7_Q2Wn3rfqhmWQd79LxgkhyY2uaREMyrqxaWHqIC0I0pplambH_fQucc7hcU38NH35Fa4evmzx2djw_JkGcHK1juDFbcAqX70JVEeNfbykpq5j2Ckitrxp0wDxqraIkIe8o8KeozsRKXijZoUAU6Tq9npi3TfKtMURKUHVJBPdke7RVuEMBR-BYWZMyrfIvl_zrslXvt3HCVHhWDS_TX-HzlFGDuAXPB0Lgcr5_CUqEdR2M9O8QNIp3lXieaZhGXymBrLgbzFRD061jsvXjoK8_W0_Sod1J0h5tpp-JlL1jL6LWutZowdThy19b80Zgrt8JwjAhTQxDa1lX-1=w1216-h912-no?authuser=0',
+      src: 'https://i.ibb.co/jbY0xpZ/IMG-3.jpg',
       altText: 'Slide 3',
       caption: 'Alaska',
       header: 'The best US state',
       key: '3'
     },
     {
-      src: 'https://lh3.googleusercontent.com/t9xpr9t4SykJcmoDXb4ArnxJW8ymxrzABnfxHLOtEaEdEyUItzcNzP6BzrVsc4sTgmfh1JloMcXmJYBpdPRFXYtvIkOjFi9yf2mK6pYxu5oCOXwRQsMcQJDauog3hKc6GT28Q3iQfQMh9AmgFC3fdN4dHloS2MF3g_xYgVkA2vMZ5RuMbsHK8_Efag3Wxq96B5kWUBHTFxzxCCTA3-9lK42WfI5t2jBVV2V5dwdmQWH5Elhdq2BPVWgMzqfbrQe-wDPUCU-j5A23dkIqKZDhcCUl_7JkQsQ7SskSw7_UKSspmlFp2D7p-9n1zLdMi6_auBRkYRV06exaKsZ-LNcQW10gUhF7lstkRSP2XyAfKJSWEtbnr2ivHfyJIarcK02JALt2TewwvCIIEb-XzXnxf-e-OzcIhnuxE2oZAVQIrGMGy0yxzW_9ojwRcH6fpafjPN4_80FyNMmqEEDS1sK4grCobHP38IbYkzc75Dd-wpB-Rr8DJLZhHutdG0rjtAql8CqH3tDg-TjNPd6Z2AbGAtRrI4Jk8G_YMrlQX0DZHsjVzPyGfINtOZIusKEpn6X6u8JckhGt7ewQ1vFmHVOG-6bD-ftLciWXe4aIIZgYLc7zZxIeEQ53y5rk9kA--gHtjzRBZ9RIqsutony6ytbeGlGOIMOk_TEEBoFZfEj7Dyijh-8qJ0B2RvmVKWdp=w828-h622-no?authuser=0',
+      src: 'https://i.ibb.co/JQVs7y5/IMG-4.jpg',
       altText: 'Slide 4',
       caption: 'Ireland',
       header: 'Kerry',
       key: '4'
     },
     {
-      src: 'https://lh3.googleusercontent.com/P8xMXkEdiPhAepRxRJy6rj7HRmEeszmsBighuBfu2C_YBjlgt59ttarnnjrJL2rmeKXxCdwjRWnHh_rKPghDuNwMtF_uP6mxwyEbzmLB4LADzyd17ts51W9RKXpmq0cFfUN0U4HECQTrjyqTxhEJ1AWRNmXvm9IOed6kSrBYxp9BLh1nsHSN688HP364pFEWd97EOhLJ-04I1I6G6fAh5W5XfR9-M5n00Plv3OKV8duZ2gCG1qOUHR9f0LkC5-4j1xGbMkdTEqzkjQC186AvIbez7DxQedD_q6o60dkCbIW9oS3VttSaLx6gFk2nhUTPWu1Q_6rriapDq4QRJDTowzGv1RYljzpZ0ZYD0oqMWi_KjWWTjTyzQGo6aYZu18fBEYLBr-2jVNF79IdX8rt1OCFpN8hlyGpL9no62-cCOIsNPZEGBOiFi4I1xPxZ-re95YQZaybNPH9_-2haOL4HHUA1ZNBJAUNlf04EdNH_raPD4st1-KocA1A7rJormlORk598QsFwetB_z3ISA6LvOL-td2x8vnn_OVymmja4BR4k9cR2nWx7SGAWWcHTMwun1rGNtTs6FdYH_HhAW_aExFT0pMbeM6H0nn3_mjeAqF-ILOFz1e11Wech2Wv3QltSWgSq6uMyImxy2cUASGs4RJzWL8f1blhxTofO5vy7m8-X0gU7-jxhDjbr2-bl=w913-h912-no?authuser=0',
+      src: 'https://i.ibb.co/23DQZGV/IMG-5.jpg',
       altText: 'Slide 5',
       caption: 'QLD',
       header: 'Whit Sundays',
       key: '5'
     },
     {
-      src: 'https://lh3.googleusercontent.com/jGXUzxU2UGjAi8QT9l2_AGn_podQiLrIkyghKOO8BcE6U4fPMiya6KUjXniFCtLSkpZRtBqyv4A9_72Jd6CtY2O5KYS4hueRB6cMQozn_DJg0fBM-2368J0ODJH6kGA8EO_txs_eFb6a12YWrfXunhVJwiMikbWTFuYXs0RGRcRCj-SM3_aqdnTEVE6zPQkPf3SGkNfm8EwspEB6aX07uFsgRehJIU3sfY2Jqahw9mLjnvtdskVO7w0nHyGQYStjfqjeSIig5ZVPVcQsbMiQDqf_O2kdnYICBi4PKZG9HgDoSryfh6_p3c3oxivWKdUeY1vZsBeEpoQ6Ll11JB9Ib1Iij44OOstqarQaPWE7sD9g64dWc1RaQu2fyzhUfaq-ossV0_1nJ9Vp7toTSRexWJwV6H_wxFn8I4Rg48wRjchxE2rSZ3Gh-kcEV-7bqjXBJI7Mm9PDjUTtz1NwST0zdNsPUd_F7TGk27tis-vzOypojkKOGei-lxl-hqiAwDseTb0dY8T_8d0H7o0EvBVxcwGIo0JNYZ7wFW2glLEkXyZu4zSbiKhfXTAYiHE27Y3vHAgtioU9ANexHKbMWP3-LQL8CwbwY22Lwp0p0-p-kDwcOgxT3BaCBJHp8roN87296ppignC9xEv8V1VBLO1_pB6DSUzqthfRkY9cJefbZ4pcu50H5BPy9qGkqUnG=w913-h912-no?authuser=0',
+      src: 'https://i.ibb.co/3dwvN3h/IMG-6.jpg',
       altText: 'Slide 6',
       caption: 'Greece',
       header: 'Oia',
       key: '6'
     },
     {
-      src: 'https://lh3.googleusercontent.com/aaWMO3mMPKaPgNb80s5Rq3fXYnII7wnhowEoIZZma9t0srimO-C8ONh-k-LtAZqu1zmarw8ty90BWdreg88Uq80pGJ6utdtH4KNKVsOHJwcV8K35bm9y_fjLfgADu5uLfdW8TZrgOLz0umf8DMGK9j6Kt--0d7krZSzRB-xIxt_6Phf1V2H_m1wtq0dmiG04sTaYy9UBdhuOguNsii2qadHpuM8WOgc1YZDYC0uTmqImurugeHCdih_eeCmqWRRgF-132GXBNGPcV4iceEdtkSVhImxmcZUyRkeBw5828Aez0C5Y-HDfiKVO3pZkbzyZjdoLiFple9PH1Hu_9jW26j41Yz_GToDsG5sVtUtAt5CBqb6UMxNz53S7XH7cw7yTv3Y0bnRaGQsJj8Y_TTyRbQ7OyAj2kTiy64rAqjF_PjUC_NsncC1ivpOxyycZqMim4T8hoSYFW0xXYwq4rc5eBLZkVrmzp7ZqS5RW8ioKh3W_4HIQDV-rBvU15Ec9V4F0VF0y99mlLtBi5QtbkXIQgE2-lpyLY7_7i_8BYIGDpPZPZ52IbEe0v1JmfA0j5qWgtg3zslttMAqtxCit1jK-hsJd2g7f_Gq2vZeAoXu9---Ey-uJvKgBtf9SOxW16GsGfDKTFFI7zFx-MzZ3Iu5rPn5oJg0dJjq0B7QsyXgxJNDww5OQR7eD7pvhhvAF=w1126-h912-no?authuser=0',
+      src: 'https://i.ibb.co/VmbXz7R/IMG-7.jpg',
       altText: 'Slide 7',
       caption: 'Italy',
       header: 'Dolomites',
       key: '7'
     },
     {
-      src: 'https://lh3.googleusercontent.com/7774xry_QyNOQ8ChIpD1KjDZ-zqQrwo_tVYj-PtqCKvxSlt20wJuoD-NSO2F06S3OEOoymbQfbsInPhBHi0JiDwNj53YQbgmhavNqt0KIqQfcqMz40oHWEXyeaiWG5NGYPlH5U6C2bh7LMRrMub8S3GC22TFnucdK1fNpNdar6Lts18M3GduEPYdSWou7ycwm2D_8yWTa9xiCvg72JYM02idtmxozz9PR9oXy5hPbIv1Tebl-5nlcd4f4Zwed4gN6_Cg00TUjQu-NUctvkVWucjZH1IWFe2GGSFw6UnIbHuTaZ_i2uYulMZPAeIAw_tgnXKhpj7jE-irOqCuQlgjWGPMyAbLb3C6bPJvPVsKhriQKAAvL7xTlhlCsNtcyq-Y5yxfn3Q2LNQxJodgUwK_T0TKsPmnrsMfNx_F7ZkraCg8Fre6mWCu67XmPjJoSdBW8PklppOt_UFrkIXJSEAH1cPX2cN_aMg6RAeP6IkiVUnTHP_6Yv__5KDyQyGpHouFLu2duVPIwTO0FMDvIRm1Sf60zYs9Y8aGK_NZYlLY3VIGP3kPZYEEewryeM216usb9Jbn1-nMsNvilhTkI5a5pzAhKkFvOumYiQrlzmx8urLS2AVzaScOdKaCe2_M3F-88V_7C_RJjj1ghjdISBGPwWHc-xssOL-_dZGfyfRf7pQ8mCQ0HmIw1lZb_uFY=s912-no?authuser=0',
+      src: 'https://i.ibb.co/tL99VGy/IMG-8.jpg',
       altText: 'Slide 8',
       caption: 'Italy',
       header: 'Leaning Tower',
@@ -79,35 +80,35 @@ const items = [
   
 const items2 = [
     {
-      src: 'https://lh3.googleusercontent.com/9PFfnOOR6_LfTJMKFug8p31aGPUvun-UlrlJk4iPMiVW7g8-dPfXY03kY8Iplpxtib5Ok5SC1euHfq59ZlYZz_VWsPEYZbvckCMYgwbH7T1qkg5ned0f6Verr7XCrsYtEYjXiSGF14W_64ekymN2AIaNODj8A9lvGYqg2qui_ePljuddSGMEw4f6WSDxsjTJ_Ie7u0TtfGYQk3JLaDip5xJsyeFTxqGrPxdWbv6mACnjjup60D8I0pZeoyeJLYuLchXoQsLUtJy3Kd7el5T-8ykESoEzhBXE0w667tTQB8KwVQDWPtwi56NfbyWPPqukFhCaRe9s4v3XQCseMuDtBkPiC38HM1AjjE2YNOHay5Al8bJhl8sYgLZ_K8eXFF3YmLezkRtinQz-dG5yqwkoJZv8cWSRZeXOvtlZkPfxbUa2fcMnFaCfWGCCzKWu1SJC6NnRfIRV1Kbwxy_lzf-ZqRYEWvrDJ3UCOP0fMIsukJeksCtcfCsCU0u6le61tgPf8UdK5bgIIwjlMIZmmKDjlExGhGMsPKsmWsj8RCC-Cq21AHen4YyPMAj8QrYfW1HgPwD6lybsuBQwBWtz_oUt_jufvFpUoXHBnE2rZUJj56sypO84ivIPN2sMlmIgGL1GtlVYlNQ2um04uaJo-Z8WW3muKFFM9lTg2Kg7KdspgKVtuOXvvgRd7rI0fo5k=w727-h969-no?authuser=0',
+      src: 'https://i.ibb.co/kqpRMm2/IMG-11.jpg',
       altText: 'Slide cat',
       caption: 'Guardian Of The Keyboard',
       header: 'Korin',
       key: '9',
     },
     {
-      src: 'https://lh3.googleusercontent.com/L5EWr6GFKlLn3f_fa5P5FwNopBpZ_b0YJuvqwNUbYBz2U_t59rGmZWBedf23FRWKjXjys2Cd4ZkP6gXJHhZPSG-BM1XJhIhK8FfVsReo77fywLJ8G04w62zq5o-kj4tkec1oV59urddrP6-NofSYY1_MT9VsNKM4ar_QBADmkY-FRRlwAPQ2XRKyTvDYxs2qpoWNjhk2Yl8-2XfRfQrJRU34Uy0UpqE9GxJzqFN-YLMT-ygYyGOHcgkuziiF02dTF11dsTzRufRID-to00A3WCQAeDxHLPLRK3ZPsHk3Jn0tZNVCTMIMtnBeyl3p36ZGs2206o6h9VtV_j7Kpysee0cVGnXGvTpGRvU0ZH4habrd1kXPX540b-dmxQyH1hxRAX4cYAtL2zrkbfKzveb_qLEec4YnCEcY36jaDCiwz_yULnipLR-MPqO1VPUy2J0Mvu3SLiihmwPwsl7XDWemlEBD_2XZxg5QHFV_OhbimrEB27Eht7CpAMs7649npFNvKc6ZRFhMtsiMBUaEd895wwgLeAPNzGSNDkgZYCbRnON1MZiTPnqIH2ZmdCG0qJgtK5-x-ANCKV6ajnPOULJIS9qREtxkiLxNdfKMrdtCmYnsF7_D_0CvyzwZd4eQANan3s2eZ0iDxTqCuAya8lIITD7eEAH92gDT7Dl8rs8csifI88CdGPldKMD8ZK3y=w1129-h966-no?authuser=0',
+      src: 'https://i.ibb.co/Bwxy6jG/IMG-9.png',
       altText: 'Slide Nerdy',
       caption: 'Nerdy Knacks',
       header: 'Side Hustle!',
       key: '10',
     },
     {
-      src: 'https://lh3.googleusercontent.com/p4WAKG0RON6rH3Q-7zg3UQ6bGSlyzoa8YOJQuJv48w836erX1kGwXTtfmKYvd6v4XY0xtB0g5AZoM7YTdugDhOT46lvDGSO1palOZKLpvSeCv29f_T7sUR_FJyJMx_pvDfl71JZmFIidBYHnOtQU_8A4oK007jvsQ1GOHcY6AGl7wNGwZ5RfCBGoMSUyHHreSeMOyJFmJiWmH9xibD576nVOekPFiOBGJtJMz800-lfmnXiGmI7LeXCZkfFZ04ZXQ5-51ViGH6u-v-DYk30fXmCekYqwHvfMCmhbPGt8GP2PQ7oKnLgRa9kBQOVIhaxeltX4P-rWa_cuVilEMAE6CTXUDaPjEJE1dzas8P6uvTUjFH6ikxAyY4W09WZ-iZUPvh-kC4VrYOL2bdoFWF-mLzrV1U_TnTYchXKUxHqdWIRYGFbQCdgVrCDs6qTBmU-h8OovxPX4JfEhNlrVA4O7nLs2MDaErMKaLxjz9FDvRZjkMC5i94rqqvzoNxmMHDcpByAVD11sLDShczCrF3OIyo0sMcpOx28rjeBCTkCA_Bxkhc7qG9n0HmpVVLiKHqd5cBpWPaw6CQEabTjdE8ThnjOYOLd5U7mZ069OxAY9xbr4834CHrlWa9SOwYDqtQ16BnasATEZXKXKXyctzW3sjOjsk3e02EKq9bHhnrzMaloXKKhJhui7J3npcQnj=w512-h735-no?authuser=0',
+      src: 'https://i.ibb.co/4dYyLtP/IMG-10.jpg',
       altText: 'Slide SupaNova',
       caption: 'Tye and Janee',
       header: 'SupaNova',
       key: '11'
     },
     {
-      src: 'https://lh3.googleusercontent.com/XsvGQIi-ADvqenMlu8aLPwEU48nlllmNCuZN9l6h6iSUnoqB2WQ_WSYer87el5Z0Led-L2NgZaHPXRJHcObB4F3O4xAVs8TepwERZlyTIDgFT6NItijRQ71aFcRH8tiu2tOgUd1c-XR1dCgfejZzY-tVUMHsN9ZRlsTLGkrCWqYNDAtCRn294naJyqacedvfX_v2GbMlgNiTbbaoWe_FqSPzftZbsnUHZrSreSurd3HIiDteEMv27C-4FphZKdx95U-w1v7ViOfVnIPTQHvNYH-qFCst7gZhtRVq6iKO6adWq5G5_gzL-FBtijxvFALVzxT3gPRie6drowySOf-JNpZZnsQTKG0gBBFu-VnG3KkAFplOHxibMpwEJ6zImFACOdoexWsK1gbzr_3wQExoFqHQu4bOpHca4jnmJ6cCL1sTbdoINeuWp91Z4lU54bhq0K3PlpigOWnzSWMOnVWC5MIGxPBrrhhGdtf8KjpuvzJ6ugGmqpnH5KnBwvWfdTVw_w4z0_TdFDmhJU2m6dkLKfa8sBZFzjQPd7IuoRNv1r5IqvVI18H_U68iKXzpV_ZfDGUJFWKtibRI3vFSI5BL17saJdwEAIOiMRN3PC0fzBLuBAKl5FtgDbrNQzt2aTp0bBKCVRwURwPpdpmAsRFtYnnvIxsSSqN2OWHlVVkD5O0p4HqHYmDY5kAsiY7h=w514-h969-no?authuser=0',
+      src: 'https://i.ibb.co/KXRjM9p/IMG-12.jpg',
       altText: 'Slide SetUp',
       caption: 'Gaming setup!',
       header: '',
       key: '12'
     },
     {
-      src: 'https://lh3.googleusercontent.com/brbGrcSamu1i0HODoaEn5uKDD0H29XczVd1dIoj4l9OZJO0dhKDwL5ZgnONvD52Ijw3z-q_QeFAt58Umrrqcp6rkNm85cyakcFmGP0p_ao0Cqlmef77AWTDzn1FthJuIFWYjQ1ucGmhqucizUUPYyhtTjBBdDODNEuTv6hPFiXe6jV-D2JROVppUkdtlFj9nNI6er4k9NihyCf6bH1D0GyDcuqcKtfc50IkRQZ0vQS697zgemuJhMF9Dc_j022_10PhPjUexU-AO5dbUyjSYxbuTfUvEaBOLfZZs207MVGvM0mGRFiG5SV96Vf9lNwQJWj-zSfCKY_dZGiiyyldjMw7WpN2Knz-UWu4x2i_DG9uiDX1M3D9_to206RbyFqz_ghxvhtfpEnG6DYOe8CafMBS57cREuTPfKysu4FQnowWTWvvguEpLSIpr5E_szTY1A_1jxE-CXDKC-fN-no6d8vuDtbq0fIIE8QVVK6bYYm59a7bfGAgVPM8o7qSYqL122U6aeQwC1vD1QUChJTAs0_i-0nQpnilxAEEl9_rBxUwUdYTC_nT-eymyFzvnYB4FHbW6egoMUziSS1VLoCPYD905ZDbqa14k1GhVWsb9b-VSA73Qr3_fp_BKB3FMSNeJd1QBN6-i5jJWb4likeOOBQb3fW03BZuHSbbyggdcbSYDNdqPl-N1CNvi8qmy=w617-h969-no?authuser=0',
+      src: 'https://i.ibb.co/qWrTybw/IMG-13.jpg',
       altText: 'Slide SetUp',
       caption: 'Footy!',
       header: 'My Friday nights',
@@ -122,7 +123,7 @@ function Home() {
 
     return (
 
-<Container fluid="true">
+<Container fluid="true" >
 
 
          <main className="main">
@@ -163,8 +164,9 @@ function Home() {
                 <h2 >Software Developer</h2>
             </Row>
             <Row className="justify-content-center">
-                <h4>Ready to provide you out of this world value!</h4>
+                <h4>Ready to provide you with out of this world service!</h4>
             </Row>
+            
             <Row className="justify-content-center">
 
                 <svg id="spacemansize" width="319" height="328" viewBox="0 0 219 228" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -256,6 +258,7 @@ function Home() {
 </defs>
 </svg>
 </motion.div>
+  
             </Row>
    <span></span>
    <span></span>
@@ -264,7 +267,19 @@ function Home() {
    <span></span>
    <span></span>
    <span></span>
+
+
+   <div className="justify-content-center text-center arrow">
+        <BsFillCaretDownFill id="icon" size="3em" className="bounce-1" />
+   </div>
+
+
+
+
+
+
 </div>
+
 
             </section>
 
@@ -314,15 +329,15 @@ function Home() {
                 <CardDeck style={{ margin: "30px", width: "70vw" }} className="flip-card">
                 <Card className="flip-card-inner card-rm-background" style={{height: "200px", width: "200px"}}>
                     <div className="flip-card-front">
-                    <CardImg top width="100%" src={htmlcss} alt="Card image cap"  />
+                    <CardImg top width="75%" src={htmlcss} alt="Card image cap"  />
                     <CardTitle tag="h5" className="card-text-color"></CardTitle>
                     </div>
                     <CardBody className="flip-card-back">
                     <CardSubtitle tag="h6" className="mb-2 card-desc text-center" >
                     <Button id="PopoverClick" type="button">
-                       Click Me!
+                       Hover Me!
                     </Button>
-                    <UncontrolledPopover trigger="click" placement="top" target="PopoverClick">
+                    <UncontrolledPopover trigger="hover"  target="PopoverClick" placement="top">
                         <PopoverHeader>First Portfolio!</PopoverHeader>
                         <PopoverBody>This was my first attempt at making a portfolio in my first term of the Coder Academy Bootcamp. I learnt a lot from this project as everything was made with HTML and CSS. I was proud of achieving my first real big attempt at my falling icon background.</PopoverBody>
                     </UncontrolledPopover>
@@ -334,15 +349,15 @@ function Home() {
                 </Card>
                 <Card className="flip-card-inner card-rm-background" style={{height: "200px", width: "200px"}}>
                     <div className="flip-card-front">
-                    <CardImg top width="100%" src={ruby} alt="Card image cap" />
+                    <CardImg top width="75%" src={ruby} alt="Card image cap" />
                     <CardTitle tag="h5" className="card-text-color"></CardTitle>
                     </div>
                     <CardBody className="flip-card-back">
                     <CardSubtitle tag="h6" className="mb-2 card-desc text-center">
                     <Button id="PopoverClick2" type="button">
-                       Click Me!
+                       Hover Me!
                     </Button>
-                    <UncontrolledPopover trigger="click" placement="top" target="PopoverClick2">
+                    <UncontrolledPopover trigger="hover"  target="PopoverClick2" placement="top">
                         <PopoverHeader>Terminal Application!</PopoverHeader>
                         <PopoverBody>I built a fun terminal application, I was able to learn a lot from this project and still love looking back at the work that went into this.</PopoverBody>
                     </UncontrolledPopover>
@@ -355,15 +370,15 @@ function Home() {
                 </Card>
                 <Card className="flip-card-inner card-rm-background" style={{height: "200px", width: "200px"}}>
                     <div className="flip-card-front">
-                    <CardImg top width="100%" src={rails} alt="Card image cap"  />
+                    <CardImg top width="75%" src={rails} alt="Card image cap"  />
                     <CardTitle tag="h5" className="card-text-color"></CardTitle>
                     </div>
                     <CardBody className="flip-card-back">
                     <CardSubtitle tag="h6" className="mb-2 card-desc text-center" >
                     <Button id="PopoverClick3" type="button">
-                       Click Me!
+                       Hover Me!
                     </Button>
-                    <UncontrolledPopover trigger="click" placement="top" target="PopoverClick3">
+                    <UncontrolledPopover trigger="hover"  target="PopoverClick3" placement="top">
                         <PopoverHeader>Two Way Marketplace!</PopoverHeader>
                         <PopoverBody>In this project, I was able to really test myself on both back-end and front-end skills. I enjoyed creating this horse tipping marketplace with payment walls and user auth plus plenty more.</PopoverBody>
                     </UncontrolledPopover>
@@ -376,15 +391,15 @@ function Home() {
                 </Card>
                 <Card className="flip-card-inner card-rm-background" style={{height: "200px", width: "200px"}}>
                     <div className="flip-card-front">
-                    <CardImg top width="100%" src={react} alt="Card image cap" />
+                    <CardImg top width="75%" src={react} alt="Card image cap" />
                     <CardTitle tag="h5" className="card-text-color"></CardTitle>
                     </div>
                     <CardBody className="flip-card-back">
                     <CardSubtitle tag="h6" className="mb-2 card-desc text-center">
                     <Button id="PopoverClick4" type="button">
-                       Click Me!
+                       Hover Me!
                     </Button>
-                    <UncontrolledPopover trigger="click" placement="top" target="PopoverClick4">
+                    <UncontrolledPopover trigger="hover"  target="PopoverClick4" placement="top">
                         <PopoverHeader>React Application!</PopoverHeader>
                         <PopoverBody>This was my last project for the bootcamp and I made a coffee ordering application with a small team using a full MERN stack.</PopoverBody>
                     </UncontrolledPopover>            
@@ -404,7 +419,7 @@ function Home() {
                     <CardDeck style={{margin: "30px", width: "53vw"}}  className="flip-card">
                         <Card className="flip-card-inner card-rm-background" style={{height:"200px", width:"200px"}} >
                             <div className="flip-card-front">
-                            <CardImg top width="100%" src={pokemon} alt="Card image cap" style={{ width:"70%"}} />
+                            <CardImg top width="75%" src={pokemon} alt="Card image cap" className="card-imgs-goals"  />
                             <CardTitle tag="h5" className="card-text-color"></CardTitle>
                             </div>
                             <CardBody className="flip-card-back">
@@ -415,7 +430,7 @@ function Home() {
                         </Card>
                         <Card className="flip-card-inner card-rm-background" style={{height:"200px", width:"200px"}} >
                             <div className="flip-card-front">
-                            <CardImg top width="100%" src={TS} alt="Card image cap" style={{ width:"60%"}} />
+                            <CardImg top width="75%" src={TS} alt="Card image cap" className="card-imgs-goals" />
                             <CardTitle tag="h5" className="card-text-color"></CardTitle>
                             </div>
                             <CardBody className="flip-card-back">
