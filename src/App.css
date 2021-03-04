@@ -11,7 +11,13 @@ h1 {
   z-index: 1000;
 }
 
-#icon {
+#icontwitter {
+  color: #EE6C4D;
+}
+#iconlinkedin {
+  color: #EE6C4D;
+}
+#iconpdf {
   color: #EE6C4D;
 }
 
@@ -732,6 +738,19 @@ img[alt*="Slide "]{
 
 .arrow {
   margin-top: 5%;
+}
+
+#icontwitter:hover
+{
+        color:#1DA1F2;
+}
+#iconlinkedin:hover
+{
+        color:#2867B2;
+}
+#iconpdf:hover
+{
+        color:#F40F02;
 }
 
 @media (max-width: 611px) {

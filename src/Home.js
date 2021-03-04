@@ -448,13 +448,13 @@ function Home() {
             </Row>
             <Row className="justify-content-center text-center">
             <a href="https://twitter.com/Tyehadfield" target="_blank">
-                <AiFillTwitterSquare id="icon" size="3em" />
+                <AiFillTwitterSquare id="icontwitter" size="3em" />
             </a>
             <a href="https://www.linkedin.com/in/tyehadfield/" target="_blank">
-                <AiFillLinkedin id="icon" size="3em" />
+                <AiFillLinkedin id="iconlinkedin" size="3em"  />
             </a>
             <a href={process.env.PUBLIC_URL + '/Tye Hadfield - Resume.pdf'} target="_blank">
-                <AiFillFilePdf id="icon" size="3em" />
+                <AiFillFilePdf id="iconpdf" size="3em"  />
              </a>
 
             </Row>
