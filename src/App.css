@@ -45,6 +45,12 @@ h2 {
   font-size: 4rem;
   }
 
+  .section1headers {
+    background: linear-gradient(to right, #bff0cf , #6fd6dd);
+    border-radius: 33px;
+    margin: 30px;
+  }
+
 
 .clickme {
   margin-top: -100px;

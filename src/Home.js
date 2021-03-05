@@ -1,10 +1,8 @@
 import React from 'react';
 import { Container,Row,Col,Card, Button, CardImg, CardTitle, CardDeck, CardSubtitle, CardBody, UncontrolledCarousel, UncontrolledPopover, PopoverHeader, PopoverBody} from 'reactstrap';
 import { motion } from "framer-motion"
-import travelman from "./assets/TravelGif.gif"
 import aboutme from "./assets/aboutme2.svg"
 import workprojects from "./assets/work_projects.svg"
-import gamer from "./assets/gamer.gif"
 import htmlcss from "./assets/htmlcss.svg"
 import ruby from "./assets/Ruby.svg"
 import rails from "./assets/rails.svg"
@@ -289,24 +287,22 @@ function Home() {
 
             <Row className="justify-content-center text-center">
                 <Col>
-                     <img src={aboutme} className="imgblobs" />
+                     <img src={aboutme} className="imgblobs" style={{marginTop: "30px"}} />
                 </Col>
             </Row>
             
             <Row className="justify-content-center">
             
                 <Col className="justify-content-center text-center ">
-                    <h4 className="text-center headers ">Lover of Travel!</h4>
+                    <h4 className="text-center headers section1headers" >Lover of Travel!</h4>
                 <div className="center-all" >
-                    <img src={travelman} style={{height: "250px", width: "250px", marginTop: "10px"}}  />
                         <UncontrolledCarousel items={items} />
                 </div>
 
                 </Col>
                 <Col className="justify-content-center text-center">
-                    <h4 className="headers text-center">Hobbies! </h4>
+                    <h4 className="headers text-center section1headers" >Hobbies! </h4>
                     <div className="center-all">
-                        <img src={gamer} style={{height: "250px", width: "250px", marginTop: "10px"}} />
                         <UncontrolledCarousel items={items2}  />
                     </div>
                     
